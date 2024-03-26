@@ -12,8 +12,8 @@ export default function CartProvider({children}: {children: ReactNode}){
         stripe={process.env.NEXT_PUBLIC_STRIPE_KEY as string}
         currency="usd"
         billingAddressCollection={false}
-        successUrl="https://localhost:3000/stripe/success"
-        cancelUrl="https://localhost:3000/stripe/error"
+        successUrl="https://e-commerce-project-fc1f.vercel.app//stripe/success"
+        cancelUrl="https://e-commerce-project-fc1f.vercel.app//stripe/error"
         shouldPersist={true}
         language="en-US"
         >
